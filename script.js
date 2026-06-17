@@ -332,7 +332,9 @@ publisher:publisher
 
 if(ai){
 
+console.log("AI RESPONSE:", ai);
 
+  
 currentData["Rumusan"] =
 ai.Rumusan ||
 ai.rumusan ||
