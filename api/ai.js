@@ -130,34 +130,39 @@ Rules:
 
 
         const text =
-        data.choices[0]
-        .message
-        .content;
+data.choices[0]
+.message
+.content;
 
 
 
-        res.json(
-            JSON.parse(text)
-        );
+let clean = text
+.replace(/```json/g,"")
+.replace(/```/g,"")
+.trim();
 
 
 
-    }
-    catch(error){
+res.json(
+    JSON.parse(clean)
+);
 
 
-        console.log(error);
+}
+catch(error){
 
 
-        res.status(500).json({
-
-            error:"AI failed"
-
-        });
+console.log(error);
 
 
-    }
+res.status(500).json({
 
+error:"AI failed"
+
+});
+
+
+}
 
 
 }
