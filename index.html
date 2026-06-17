@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NILAM AI Assistant</title>
+
+
+<link rel="stylesheet" href="style.css">
+
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="container header-box">
+
+<div>
+
+<h1>
+📚 NILAM AI Assistant
+</h1>
+
+<p>
+Book Search → NILAM Format → Copy
+</p>
+
+</div>
+
+
+</div>
+
+</header>
+
+
+
+<main class="container">
+
+
+<!-- Search -->
+
+
+<div class="card">
+
+
+<h2>
+🔍 Cari Buku / Search Book
+</h2>
+
+
+<div class="search-box">
+
+
+<input
+
+id="searchInput"
+
+placeholder="Contoh: Harry Potter and the Philosopher's Stone">
+
+
+<button onclick="searchBook()">
+
+Search
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!-- Result -->
+
+
+<div id="result"
+class="card hidden">
+
+
+<h2>
+📖 Maklumat NILAM
+</h2>
+
+
+<div id="nilamData">
+
+
+</div>
+
+
+<br>
+
+
+<button
+
+onclick="copyAll()"
+
+class="copy-all">
+
+📋 Copy Semua NILAM
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Progress -->
+
+
+<div class="card">
+
+
+<h2>
+📈 Progress 720 Buku
+</h2>
+
+
+<div class="progress">
+
+<div id="progressBar">
+
+</div>
+
+</div>
+
+
+<p>
+
+<span id="bookCount">
+
+0
+
+</span>
+
+/
+720
+
+</p>
+
+
+</div>
+
+
+
+
+</main>
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
