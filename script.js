@@ -335,42 +335,49 @@ if(ai){
 
 currentData["Rumusan"] =
 ai.Rumusan ||
-currentData["Rumusan"];
+ai.rumusan ||
+"AI failed";
 
 
 
 currentData["Pengajaran"] =
 ai.Pengajaran ||
-currentData["Pengajaran"];
+ai.pengajaran ||
+"AI failed";
 
 
 
 currentData["Kategori"] =
 ai.Kategori ||
+ai.kategori ||
 category;
 
 
 
 currentData["Jenis buku"] =
 ai["Jenis buku"] ||
+ai["jenis buku"] ||
 type;
 
 
 
 currentData["Bahasa"] =
 ai.Bahasa ||
+ai.bahasa ||
 language;
 
 
 
 currentData["Bilangan mukasurat"] =
 ai.Mukasurat ||
+ai.mukasurat ||
 pages;
 
 
 
 currentData["Penerbit"] =
 ai.Penerbit ||
+ai.penerbit ||
 publisher;
 
 
