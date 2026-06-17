@@ -357,6 +357,7 @@ category;
 currentData["Jenis buku"] =
 ai["Jenis buku"] ||
 ai["jenis buku"] ||
+ai["jenis_buku"] ||
 type;
 
 
@@ -371,6 +372,7 @@ language;
 currentData["Bilangan mukasurat"] =
 ai.Mukasurat ||
 ai.mukasurat ||
+ai["mukasurat"] ||
 pages;
 
 
