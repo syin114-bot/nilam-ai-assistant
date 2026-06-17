@@ -55,7 +55,7 @@ await googleRes.json();
 
 
 
-if(googleData.items){
+if(googleData.items && googleData.items.length > 0){
 
 
 let book =
@@ -65,17 +65,15 @@ input
 );
 
 
-
-if(book){
-
-
 let info =
 book.volumeInfo;
 
 
 
 let extra =
-await getOpenLibrary(info.title);
+await getOpenLibrary(
+info.title
+);
 
 
 
@@ -88,8 +86,8 @@ generateNilam(
 
 return;
 
-}
 
+}
 
 }
 
