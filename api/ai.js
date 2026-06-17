@@ -56,13 +56,13 @@ ${pages || "Unknown"}
 Return ONLY JSON.
 
 {
-"Rumusan":"",
-"Pengajaran":"",
-"Kategori":"",
-"Jenis buku":"",
-"Bahasa":"",
-"Mukasurat":"",
-"Penerbit":""
+"rumusan":"",
+"pengajaran":"",
+"kategori":"",
+"jenis_buku":"",
+"bahasa":"",
+"mukasurat":"",
+"penerbit":""
 }
 
 
